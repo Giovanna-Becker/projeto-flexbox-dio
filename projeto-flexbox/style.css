@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, georgia;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto; /* fica no meio da página */
+    min-width: 320px;
+}
+
+header {
+    background: rgb(2, 2, 78);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header .list-itens {
+    display: flex;
+    max-width: 260px; /* Limita a largura do menu */
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-itens li a {
+    color: white;
+}
+
+header .menu {
+    justify-content: space-between;
+}
+
+div img {
+    display: block;
+    width: 100%;
+}
+
+.apresentacao {
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao .texto-apresentacao {
+    min-height: 200px;
+}
+
+.texto-apresentacao h1 {
+    color: rgb(2, 2, 78);
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.texto-apresentacao a {
+    background: rgb(2, 2, 78);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    max-width: 220px;
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px 0;
+   /* ou
+    height: 50px;
+    line-height: 50px;
+    */
+    margin-top: 10px;
+}
+
+#quem-somos {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quem-somos h2 {
+    font-size: 32px;
+    color: rgb(2, 2, 78);
+    display: flex;
+}
+
+#quem-somos h2::before {
+    content: "";
+    height: 40px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: rgb(2, 2, 78);
+    position: relative;
+}
+
+#quem-somos p {
+    max-width: 500px;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.container-externo {
+    background-color: rgb(2, 2, 78);
+    width: 100%;
+    margin-top: 100px;
+}
+
+#servicos {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+#servicos h2 {
+    color: white;
+    font-size: 32px;
+    padding-bottom: 70px;
+}
+
+.list-servicos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list-servicos .item-servico {
+    text-align: center;
+}
+
+.item-servico {
+    max-width: 210px;
+    width: 100%;
+}
+
+.item-servico a {
+    display: inline-block;
+    width: 150px;
+    background-color: white;
+    border-radius: 30px;
+    /*height: 50px;*/
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: rgb(2, 2, 78);
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.item-servico p {
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+
+}
+
+.item-servico img {
+    width: 85%;
+    margin: auto;
+}
+
+#planos {
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+#planos h2 {
+    color: rgb(2, 2, 78);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.list-planos {
+    display: flex;
+    align-items: flex-end;
+}
+
+.item-plano {
+    flex: 1;
+    border: 5px solid rgb(2, 2, 78);
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.item-plano h3 {
+    color: rgb(2, 2, 78);
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item-plano h3::after {
+    content: "";
+    background-color: rgb(2, 2, 78);
+    height: 3px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.item-plano ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-plano li {
+    display: flex;
+    color: rgb(2, 2, 78);
+    font-size: 17px;
+    padding-top: 7px;
+    margin-left: 30px;
+    max-width: 240px;
+}
+
+.item-plano li::before {
+    content: "";
+    height: 7px;
+    width: 7px;
+    background-color: rgb(2, 2, 78);
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+.item-plano a {
+    display: block;
+    width: 190px;
+    background-color: rgb(2, 2, 78);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer {
+    background-color: rgb(2, 2, 78);
+    color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+footer .footer {
+    justify-content: space-between;
+}
+
+/* Mobile */
+
+@media(max-width: 1020px) {
+
+    header {
+        padding: 0 20px;
+        
+    }
+
+    .apresentacao {
+        height: 100vh;
+    }
+
+    .texto-apresentacao {
+        padding-left: 20px;
+    }
+
+    .texto-apresentacao h1{
+        font-size: 35px;
+    }
+
+    #servicos h2 {
+        padding-left: 20px;
+    }
+
+    .list-servicos {
+        justify-content: space-around;
+        margin-right: 20px;
+    }
+
+    .item-servico img {
+        width: 60%;
+        margin: auto;
+    }
+
+    #planos h2 {
+        padding-left: 20px;
+    }
+
+    .list-planos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-planos .item-plano {
+        max-width: 70%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        padding: 0 20px;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .list-itens {
+        margin-top: 10px;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .apresentacao {
+        align-items: center;
+    }
+
+    #quem-somos {
+        flex-direction: column;
+    }
+
+    #quem-somos img {
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #quem-somos p {
+        width: 350px;
+        align-items: center;
+    }
+
+    .list-servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-servico img {
+        width: 80%;
+    }
+
+    .item-servico {
+        margin-bottom: 40px;
+    }
+}
